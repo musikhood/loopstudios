@@ -39,7 +39,7 @@ function Footer() {
               <img src={insta} alt="insta" className="footer__img" />
             </div>
           </div>
-          <div className="footer__copyright" role="contentinfo">
+          <div className="footer__copyright">
             &copy; 2022 Loopstudios. All rights reserved
           </div>
         </div>

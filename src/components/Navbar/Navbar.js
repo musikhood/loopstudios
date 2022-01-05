@@ -56,7 +56,6 @@ function Navbar() {
           ? { backgroundColor: "#000" }
           : { backgroundColor: "transparent" }
       }
-      role="navigation"
     >
       <div className="nav__logo-box">
         <img src={logo} alt="logo" className="nav__logo" />

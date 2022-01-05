@@ -86,7 +86,7 @@ function Creations() {
     }
   });
   return (
-    <section className="creations" role="region">
+    <section className="creations">
       <div className="creations__title">
         <h3 className="creations__h3">Our Creations</h3>
         {screenSize ? null : (
