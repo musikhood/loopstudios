@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/loopstudios/static/css/main.79dfa0bb.css",
+    "main.css": "/loopstudios/static/css/main.b87905bf.css",
     "main.js": "/loopstudios/static/js/main.d78c6d32.js",
     "static/media/image-hero.jpg": "/loopstudios/static/media/image-hero.9b5aacead42e955824d3.jpg",
     "static/media/image-from-above.jpg": "/loopstudios/static/media/image-from-above.f316f3f3afc353415f71.jpg",
@@ -16,11 +16,11 @@
     "index.html": "/loopstudios/index.html",
     "static/media/icon-close.svg": "/loopstudios/static/media/icon-close.bbbbb0069bb8a015e77966ccb00bf3cd.svg",
     "static/media/icon-hamburger.svg": "/loopstudios/static/media/icon-hamburger.5153cb809501d4309c231954bc0f9ec2.svg",
-    "main.79dfa0bb.css.map": "/loopstudios/static/css/main.79dfa0bb.css.map",
+    "main.b87905bf.css.map": "/loopstudios/static/css/main.b87905bf.css.map",
     "main.d78c6d32.js.map": "/loopstudios/static/js/main.d78c6d32.js.map"
   },
   "entrypoints": [
-    "static/css/main.79dfa0bb.css",
+    "static/css/main.b87905bf.css",
     "static/js/main.d78c6d32.js"
   ]
 }
