@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.scss";
-import logo from "../images/logo.svg";
-import menuOpen from "../images/icon-hamburger.svg";
-import menuClose from "../images/icon-close.svg";
+import logo from "../../images/logo.svg";
+import menuOpen from "../../images/icon-hamburger.svg";
+import menuClose from "../../images/icon-close.svg";
 
 function Nav({ name }) {
   return (
@@ -36,6 +36,7 @@ function Navbar() {
   window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
       setIsOpen(false);
+      setChangeColor(false);
     }
   });
   window.addEventListener("scroll", () => {

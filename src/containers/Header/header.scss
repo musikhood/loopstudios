@@ -1,13 +1,14 @@
 .header {
-  background-image: url("../images/mobile/image-hero.jpg");
+  background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 840px;
+  min-height: 800px;
   padding: 0 5rem;
   display: flex;
   flex-direction: column;
+
   @media screen and (min-width: 800px) {
-    background-image: url("../images/desktop/image-hero.jpg");
+    background-image: url("../../images/desktop/image-hero.jpg");
     background-position: top left;
     min-height: 700px;
     padding: 0 10rem;
@@ -17,6 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 124rem;
+    width: 100%;
+    margin: 0 auto;
     @media screen and (min-width: 800px) {
       justify-content: flex-start;
     }
@@ -29,7 +33,7 @@
       text-transform: uppercase;
       border: 3px solid var(--white);
       padding: 2rem;
-      max-width: min-content;
+      max-width: 320px;
       display: block;
       @media screen and (max-width: 360px) {
         font-size: 3rem;
