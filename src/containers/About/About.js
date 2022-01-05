@@ -13,7 +13,7 @@ function About() {
     }
   });
   return (
-    <section className="about">
+    <section className="about" role="main">
       <div className="about__image-box">
         <img
           src={scaleImg ? imgDesktop : imgMobile}
@@ -22,7 +22,7 @@ function About() {
         />
       </div>
       <div className="about__text">
-        <h3 className="about__h3">the leader in interactive vr</h3>
+        <h2 className="about__h2">the leader in interactive vr</h2>
         <p className="about__p">
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best comapnies around the globe. Our

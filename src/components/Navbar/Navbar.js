@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.scss";
 import logo from "../../images/logo.svg";
-import menuOpen from "../../images/icon-hamburger.svg";
-import menuClose from "../../images/icon-close.svg";
 
 function Nav({ name }) {
   return (
@@ -58,19 +56,20 @@ function Navbar() {
           ? { backgroundColor: "#000" }
           : { backgroundColor: "transparent" }
       }
+      role="navigation"
     >
       <div className="nav__logo-box">
         <img src={logo} alt="logo" className="nav__logo" />
       </div>
       <Nav name="nav__desktop" />
       <div className="nav__mobile">
-        <div className="nav__menu-box">
-          <img
-            src={isOpen ? menuClose : menuOpen}
-            alt="menu"
-            className="nav__menu"
-            onClick={() => setIsOpen((prevValue) => !prevValue)}
-          />
+        <div
+          className="nav__menu-box"
+          onClick={() => setIsOpen((prevValue) => !prevValue)}
+        >
+          <div
+            className={isOpen ? "nav__menu nav__menu--active" : "nav__menu"}
+          ></div>
         </div>
         <Nav name="nav__mobile-menu" />
       </div>
