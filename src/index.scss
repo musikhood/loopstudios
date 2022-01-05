@@ -8,6 +8,15 @@ $very-dark-gray: #696969;
 //FONT FAMILY
 $default-font: "Josefin Sans";
 $secondary-font: "Alata";
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --dark-grey: #{$dark-gray};
+  --very-dark-grey: #{$very-dark-gray};
+
+  --default-font: #{$default-font};
+  --secondary-font: #{$secondary-font};
+}
 
 *,
 *::after,
@@ -20,4 +29,8 @@ $secondary-font: "Alata";
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  height: 200vh;
 }

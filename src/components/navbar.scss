@@ -1,0 +1,105 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+  transition: background-color 0.2s;
+  @media screen and (max-width: 800px) {
+    padding: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__logo,
+  &__menu {
+    position: relative;
+    z-index: 100;
+  }
+  &__menu {
+    cursor: pointer;
+  }
+  &__desktop {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    li > a {
+      position: relative;
+      font-size: 1.5rem;
+      font-family: var(--secondary-font);
+      text-decoration: none;
+      color: var(--white);
+      padding: 1rem 0;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        transform: translateX(-50%);
+        background-color: currentColor;
+        transition: width 0.2s;
+      }
+      &:hover::after {
+        width: 50%;
+      }
+    }
+  }
+  &__mobile {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+  &__mobile-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    background-color: var(--black);
+    transform: translateX(-110%);
+    transition: 0.5s;
+
+    li a {
+      margin-left: 5rem;
+      font-size: 3.5rem;
+      font-family: var(--default-font);
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 200;
+      transition: all 0.2s;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        transform: translateY(-3px);
+        width: 100%;
+        height: 0;
+        background-color: var(--white);
+        transition: all 0.2s;
+      }
+      &:hover {
+        color: var(--black);
+        &::after {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
