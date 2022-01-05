@@ -5,7 +5,7 @@
   box-sizing: content-box;
   @media screen and (min-width: 800px) {
     box-sizing: border-box;
-    max-width: 144rem;
+    max-width: 130rem;
     padding: 5rem 10rem 10rem;
   }
   &__title {
@@ -81,7 +81,7 @@
   }
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 28.75rem));
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 25.25rem));
     gap: 2rem;
     justify-items: center;
     justify-content: center;
