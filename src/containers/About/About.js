@@ -13,7 +13,7 @@ function About() {
     }
   });
   return (
-    <section className="about" role="main" aria-labelledby="about">
+    <section className="about" role="main">
       <div className="about__image-box">
         <img
           src={scaleImg ? imgDesktop : imgMobile}

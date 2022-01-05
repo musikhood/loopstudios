@@ -86,7 +86,7 @@ function Creations() {
     }
   });
   return (
-    <section className="creations" role="main" aria-labelledby="creations">
+    <section className="creations" role="main">
       <div className="creations__title">
         <h3 className="creations__h3">Our Creations</h3>
         {screenSize ? null : (
