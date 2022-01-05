@@ -30,7 +30,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [changeColor, setChangeColor] = useState(false);
   useEffect(() => {
-    let value = isOpen ? "translate(0)" : "translate(-110%)";
+    let value = isOpen ? "translate(0)" : "translate(-200%)";
     document.querySelector(".nav__mobile-menu").style.transform = value;
   }, [isOpen]);
   window.addEventListener("resize", () => {
@@ -50,7 +50,9 @@ function Navbar() {
     <nav
       className="nav"
       style={
-        changeColor ? { backgroundColor: "#000" } : { backgroundColor: "#ccc" }
+        changeColor
+          ? { backgroundColor: "#000" }
+          : { backgroundColor: "transparent" }
       }
     >
       <div className="nav__logo-box">

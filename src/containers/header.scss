@@ -1,0 +1,43 @@
+.header {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 840px;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 800px) {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: top left;
+    min-height: 700px;
+    padding: 0 10rem;
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 800px) {
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-family: var(--default-font);
+      font-weight: 300;
+      color: var(--white);
+      text-transform: uppercase;
+      border: 3px solid var(--white);
+      padding: 2rem;
+      max-width: min-content;
+      display: block;
+      @media screen and (max-width: 360px) {
+        font-size: 3rem;
+      }
+      @media screen and (min-width: 800px) {
+        font-size: 7rem;
+        max-width: 600px;
+      }
+    }
+  }
+}

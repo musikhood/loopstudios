@@ -3,9 +3,11 @@ import Navbar from "../components/Navbar";
 import "./header.scss";
 function Header() {
   return (
-    <header>
+    <header className="header">
       <Navbar />
-      Header
+      <div className="header__content">
+        <h1>immersive experiences that deliver</h1>
+      </div>
     </header>
   );
 }
