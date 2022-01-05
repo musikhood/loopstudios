@@ -40,7 +40,7 @@ function Navbar() {
   });
   window.addEventListener("scroll", () => {
     if (window.innerWidth > 800) return;
-    if (window.scrollY > 200) {
+    if (window.scrollY > 150) {
       setChangeColor(true);
     } else {
       setChangeColor(false);
