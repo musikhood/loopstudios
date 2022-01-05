@@ -2,7 +2,9 @@
   max-width: 32rem;
   margin: 0 auto;
   padding: 5rem 2rem 10rem;
+  box-sizing: content-box;
   @media screen and (min-width: 800px) {
+    box-sizing: border-box;
     max-width: 144rem;
     padding: 5rem 10rem 10rem;
   }
