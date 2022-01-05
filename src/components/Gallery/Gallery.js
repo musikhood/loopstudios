@@ -3,14 +3,14 @@ import React, { useState, useEffect } from "react";
 function Gallery({ imageMobile, imageDesktop, about }) {
   const [scaleImg, setScaleImg] = useState(false);
   useEffect(() => {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 799) {
       setScaleImg(true);
     } else {
       setScaleImg(false);
     }
   }, []);
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 799) {
       setScaleImg(true);
     } else {
       setScaleImg(false);

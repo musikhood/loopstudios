@@ -72,14 +72,14 @@ const pictures = [
 function Creations() {
   const [screenSize, setScreenSize] = useState(false);
   useEffect(() => {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 799) {
       setScreenSize(false);
     } else {
       setScreenSize(true);
     }
   }, []);
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 799) {
       setScreenSize(false);
     } else {
       setScreenSize(true);
