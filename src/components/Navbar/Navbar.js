@@ -38,6 +38,9 @@ function Navbar() {
       setIsOpen(false);
       setChangeColor(false);
     }
+    if (window.innerWidth < 801 && window.scrollY > 150) {
+      setChangeColor(true);
+    }
   });
   window.addEventListener("scroll", () => {
     if (window.innerWidth > 800) return;

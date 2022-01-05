@@ -1,6 +1,6 @@
 .about {
   max-width: 32rem;
-  margin: 10rem auto;
+  margin: 10rem auto 5rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -31,7 +31,7 @@
       align-self: flex-end;
       text-align: left;
       background-color: var(--white);
-      transform: translateX(-200px);
+      transform: translateX(-20rem);
       padding: 10rem 0 0 10rem;
     }
   }

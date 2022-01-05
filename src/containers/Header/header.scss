@@ -2,7 +2,7 @@
   background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 800px;
+  min-height: 80rem;
   padding: 0 5rem;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   @media screen and (min-width: 800px) {
     background-image: url("../../images/desktop/image-hero.jpg");
     background-position: top left;
-    min-height: 700px;
+    min-height: 70rem;
     padding: 0 10rem;
   }
   &__content {
@@ -33,14 +33,14 @@
       text-transform: uppercase;
       border: 3px solid var(--white);
       padding: 2rem;
-      max-width: 320px;
+      max-width: 32rem;
       display: block;
       @media screen and (max-width: 360px) {
         font-size: 3rem;
       }
       @media screen and (min-width: 800px) {
         font-size: 7rem;
-        max-width: 600px;
+        max-width: 60rem;
       }
     }
   }
